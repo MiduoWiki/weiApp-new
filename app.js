@@ -1,18 +1,11 @@
 //app.js
 
-import { createStore } from "./libs/redux/redux.js";
-
+const { createStore } = require("./libs/redux/redux.js")
 const WeAppRedux = require('./libs/redux/wechat-weapp-redux.js');
 const { Provider } = WeAppRedux;
+const rootReducers = require("./store/reducers/index.js");
 
-function addTodo() {
-    return {
-        type: "adddTodo",
-        text: "add"
-    }
-}
-
-const store = createStore(addTodo)
+const store = createStore(rootReducers);
 
 App(Provider(store)({
     onLaunch: function(options) {

@@ -1,1 +1,5 @@
 <text>hello world</text>
+<button type="default" size="defaultSize" bindtap="showPageMessage" data-page="index" >点击前往index页面</button>
+<button type="default" size="defaultSize" bindtap="showPageMessage" data-page="test">点击前往test页面</button>
+<text> {{ pageShowMessage }} </text>
+ 
