@@ -1,1 +1,4 @@
-
+@import "./libs/css/font.css";
+page {
+    background-color: #F8F8F8;
+}

@@ -1,0 +1,19 @@
+.component-index-list {
+    position: relative;
+}
+
+.component-index-list .youjiantou {
+    float: right;
+    line-height: 100rpx;
+    margin-right: 6%;
+}
+
+.component-index-list-item {
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    width: 90%;
+    margin: 5% auto;
+    background-color: #fff;
+}
