@@ -1,0 +1,26 @@
+.view-layout-box1 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-box {
+    width: 100%;
+    text-align: center;
+}
+
+.view-layout-box2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.flex-box-class {
+    text-align: center;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin-top: 40rpx;
+}
+
+.flex-box-hover {
+    opacity: 0.5;
+}

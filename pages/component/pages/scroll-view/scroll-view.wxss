@@ -1,0 +1,11 @@
+.scroll-view-layout {
+    height: 100%;
+    width: 100%;
+}
+
+.scroll-view {
+    height: 300rpx;
+    margin: 5%;
+    width: 90%;
+    border: 1px solid #ccc;
+}

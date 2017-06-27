@@ -1,5 +1,7 @@
 {
     "pages": [
+        "pages/component/pages/scroll-view/scroll-view",
+        "pages/component/pages/view/view",
         "pages/component/index",
         "pages/API/index"
     ],

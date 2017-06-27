@@ -1,11 +1,15 @@
 <view class="component-index-ck">
     <block wx:for="{{ list }}" wx:key="{{ item.id }}">
         <view class="component-index-list">
-            <view class="component-index-list-item"> {{ item.name }} </view>
-        </view>
-        <view wx:for="{{ item.pages }}" wx:key="{{ index }}" class="component-index-pages">
-            <view> {{ item }} </view>
-            <view class="icon-youjiantou"></view>
+            <view>
+                <view class="component-index-list-item  {{ item.open?'component-index-list-item-hidden':'' }}" catchtap="showPageList" data-item-id="{{item.id}}"> {{ item.name }}</view>
+                <view class="component-index-pages {{ item.open?'component-index-pages-show':'' }}" wx:for-items="{{ item.pages }}" wx:for-item="page" wx:key="{{ index }}">
+                    <navigator url="./pages/{{page}}/{{page}}">
+                        <view> {{ page }} </view>
+                        <view class="icon-youjiantou"></view>
+                    </navigator>
+                </view>
+            </view>
         </view>
     </block>
 </view>

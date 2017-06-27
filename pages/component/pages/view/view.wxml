@@ -1,0 +1,27 @@
+<view>flex布局</view>
+<view>=============================</view>
+
+<view class="view-layout">
+    <view>row布局</view>
+    <view class="view-layout-box1">
+        <view class="flex-box">box1</view>
+        <view class="flex-box">box2</view>
+        <view class="flex-box">box3</view>
+        <view class="flex-box">box4</view>
+    </view>
+    <view>=============================</view>
+    <view>column布局</view>
+    <view class="view-layout-box2">
+        <view class="flex-box">box1</view>
+        <view class="flex-box">box2</view>
+        <view class="flex-box">box3</view>
+        <view class="flex-box">box4</view>
+    </view>
+    <view>=============================</view>
+    <view>默认样式设置</view>
+    <view class="view-layout-box2">
+        <view class="flex-box-class bgryellowgreen" hover-class="flex-box-hover">hover-class</view>
+        <view class="flex-box-class bgburlywood" hover-class="flex-box-hover" hover-start-time="2000">hover-start-time 2s之后</view>
+        <view class="flex-box-class bggreen" hover-class="flex-box-hover" hover-stay-time="2000">hover-stay-time 保留2s</view>
+    </view>
+</view>

@@ -1,4 +1,19 @@
-@import "./libs/css/font.css";
+@import "libs/css/font.wxss";
 page {
     background-color: #F8F8F8;
+}
+
+
+/*调色板*/
+
+.bgryellowgreen {
+    background-color: yellowgreen;
+}
+
+.bgburlywood {
+    background-color: burlywood;
+}
+
+.bggreen {
+    background-color: #179B16;
 }

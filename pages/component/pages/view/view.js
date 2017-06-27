@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
-const { connect } = require("./../../libs/redux/wechat-weapp-redux.js");
-const {} = require("./../../store/action.js");
+const { connect } = require("./../../../../libs/redux/wechat-weapp-redux.js");
+const {} = require("./../../../../store/action.js");
 var app = getApp();
 
 const mapStateToData = state => ({
@@ -16,28 +16,25 @@ const pageConfig = {
     data: {},
     //事件处理函数
     onLoad() {
-        console.log("onload", "API-index");
+        console.log("onload", "view");
     },
     onReady() {
-        console.log("ready", "API-index");
+        console.log("ready", "view");
     },
     onShow() {
-        console.log("onshow", "API-index");
+        console.log("onshow", "view");
     },
     onHide() {
-        console.log("onhide", "API-index");
+        console.log("onhide", "view");
     },
     onUnload() {
-        console.log("onUnload", "API-index");
+        console.log("onUnload", "view");
     },
     onPullDownRefresh() {
-        console.log("onPullDownRresh", "API-index");
+        console.log("onPullDownRresh", "view");
     },
     onReachBottom() {
-        console.log("onReachBottom", "API-index");
-    },
-    onShareAppMessage() {
-
+        console.log("onReachBottom", "view");
     }
 };
 

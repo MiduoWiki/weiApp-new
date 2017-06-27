@@ -1,5 +1,7 @@
 //app.js
 
+// const vConsole = require("./utils/vconsole.js");
+
 const WeAppRedux = require('./libs/redux/wechat-weapp-redux.js');
 const { Provider } = WeAppRedux;
 

@@ -1,0 +1,6 @@
+<view class="scroll-view-layout">
+    <!--scroll-view-->
+    <scroll-view class="scroll-view" scroll-x>
+
+    </scroll-view>
+</view>
