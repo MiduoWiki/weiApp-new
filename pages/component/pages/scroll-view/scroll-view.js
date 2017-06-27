@@ -13,7 +13,11 @@ const mapDispatchToPage = dispatch => ({
 });
 
 const pageConfig = {
-    data: {},
+    data: {
+        scrollTop: 70,
+        scrolltoupperstr: "",
+        scrolltolowerstr: ""
+    },
     //事件处理函数
     onLoad() {
         console.log("onload", "view");
@@ -35,6 +39,18 @@ const pageConfig = {
     },
     onReachBottom() {
         console.log("onReachBottom", "view");
+    },
+    scrolltoupperEvent() {
+        console.log("scrolltoupperEvent");
+        this.setData({
+            scrolltoupperstr: "scrolltoupperstr"
+        })
+    },
+    scrolltolowerEvent() {
+        console.log("scrolltolowerEvent");
+        this.setData({
+            scrolltolowerstr: "scrolltolowerstr"
+        })
     }
 };
 

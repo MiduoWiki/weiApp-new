@@ -1,6 +1,43 @@
 <view class="scroll-view-layout">
+
     <!--scroll-view-->
     <scroll-view class="scroll-view" scroll-x>
-
+        <block wx:for-items="{{ 100 }}" wx:for-item="i" wx:key="*i">
+            <!--<view class="sc-box">{{ i }}</view>-->
+            <text>{{ i }}</text>
+        </block>
     </scroll-view>
+
+    <scroll-view class="scroll-view" scroll-y>
+        <block wx:for-items="{{ 100 }}" wx:for-item="i" wx:key="*i">
+            <view>{{ i }}</view>
+        </block>
+    </scroll-view>
+
+    <view>=============</view>
+    <view>scrollTop {{ scrollTop }}</view>
+    <view> {{ scrolltoupperstr }} </view>
+    <view> {{ scrolltolowerstr }} </view>
+    <view></view>
+    <scroll-view class="scroll-view" scroll-y scroll-top="{{ scrollTop }}" bindscrolltoupper="scrolltoupperEvent" upper-threshold="60" bindscrolltolower="scrolltolowerEvent">
+        <block wx:for-items="{{ 100 }}" wx:for-item="i" wx:key="*i">
+            <view>{{ i }}</view>
+        </block>
+    </scroll-view>
+
+
+
+
+
+    <view class="tip-box">
+        <view class="tip-scroll-view">
+            tip: 请勿在 scroll-view 中使用 textarea、map、canvas、video 组件
+        </view>
+        <view class="tip-scroll-view">
+            tip: 在滚动 scroll-view 时会阻止页面回弹，所以在 scroll-view 中滚动，是无法触发 onPullDownRefresh
+        </view>
+        <view class="tip-scroll-view">
+            tip: 若要使用下拉刷新，请使用页面的滚动，而不是 scroll-view ，这样也能通过点击顶部状态栏回到页面顶部
+        </view>
+    </view>
 </view>

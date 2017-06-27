@@ -9,3 +9,17 @@
     width: 90%;
     border: 1px solid #ccc;
 }
+
+.tip-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-scroll-view {
+    font-size: 28rpx;
+    margin-top: 20rpx;
+}
+
+.sc-box {
+    float: left;
+}
